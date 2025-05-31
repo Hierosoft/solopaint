@@ -31,18 +31,22 @@
 
 # Eclipse CDT project files
 .cproject
+# ^ .cproject ok to commit unless has absolute paths (helps import on another computer without reconfiguring)
 .project
+# ^ .project ok to commit unless has absolute paths (helps import on another computer without reconfiguring)
+# Eclipse settings (user-specific)
 .settings/
 
-# Vagrant directory
+# Environment-specific or temporary folders
 .vagrant/
+.DS_Store
 
 # Include makefiles
 !Makefile
-*~
 
 # Libraries
 /lib
+# ^ may be necessary for modules etc (ignore /lib/*.a if necessary instead)
 
 # TouchGFX
 /generated
@@ -51,4 +55,11 @@
 
 /simulator/msvs/.vs
 
+# Temporary files
+*~
+*.swp
+*.swo
 
+# Environment-specific or temporary folders
+.vagrant/
+.DS_Store
