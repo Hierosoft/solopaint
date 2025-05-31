@@ -43,3 +43,12 @@
 
 # Libraries
 /lib
+
+# TouchGFX
+/generated
+
+/build
+
+/simulator/msvs/.vs
+
+
